@@ -6,3 +6,4 @@ for i in nums:
     elif i % 5 == 0:
         result.append(i)
 print(sum(result))
+
