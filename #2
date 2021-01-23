@@ -1,0 +1,13 @@
+nums = [1, 2]
+evens = []
+i = 0
+j = 1
+while nums[j] < 4000001:
+    summ = nums[i] + nums[j]
+    nums.append(summ)
+    i += 1
+    j += 1
+for k in nums:
+    if k % 2 == 0:
+        evens.append(k)
+print(sum(evens))
