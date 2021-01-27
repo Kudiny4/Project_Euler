@@ -1,0 +1,14 @@
+def palindrom(range_start, range_end):
+    nums_1 = list(range(range_start, range_end))
+    nums_2 = nums_1
+    result = []
+    for i in nums_1:
+        for j in nums_2:
+            pre_num = i * j
+            pre_str = str(pre_num)
+            if pre_str == pre_str[::-1]:
+                result.append(pre_num)
+    return max(result)
+
+
+print(palindrom(100, 1000))
